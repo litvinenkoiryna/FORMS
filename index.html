@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+
+    <link href="scss/settings/_reset.scss" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=PT+Sans&family=Poppins:wght@200;600&family=Raleway:wght@300&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form">
+        <div class="form__title">
+            <h1 class="form__titletext">Create an Account</h1>
+        </div>
+        <div class="form__fields">
+           <form action="#" method="get">
+               <div class="form__firstname">
+                   <label class="form__label" for="Firstname">First Name</label>
+                   <input class="form__input" minlength="3" maxlength="10" required size="15" type="text" name="Username" id="Firstname">
+                   <div class="form__error">Error</div>
+               </div>
+               <div class="form__lastname">
+                   <label class="form__label" for="Lastname">Last Name</label>
+                   <input class="form__input" minlength="2" maxlength="15" required size="15" type="text" name="Username" id="Lastname">
+                   <div class="form__error">Error</div>
+               </div>
+               <div class="form__email">
+                   <label class="form__label" for="email">email</label>
+                   <input class="form__input" type="email" id="email" pattern=".+@globex\.com" size="30" required>
+                   <div class="form__error">Error</div>
+                   <p>We'll never share your email with anyone else</p>
+               </div>
+               <div>
+                   <input type="radio" id="Male" name="s" value="Male">
+                   <label for="Male">Male</label>
+               </div>
+               <div>
+                   <input type="radio" id="Female" name="s" value="Female">
+                   <label for="Female">Female</label>
+               </div>
+           <div class="location">
+               <label>Country:
+                   <select name="country" id="country" >
+                       <option value="">Select</option>
+                       <option value="Ukraine">Ukraine</option>
+                       <option value="Poland">Poland</option>
+                       <option value="USA">USA</option>
+                       <option value="UK">UK</option>
+                       <option value="Another">Another</option>
+                   </select>
+               </label>
+               <label class="form__label" for="City">City</label>
+               <input class="form__input" minlength="2" maxlength="15" required size="15" type="text" name="City" id="City">
+           </div>
+               <div class="button">
+                  <button type="submit" class="button__submit">Sign Up</button>
+                   <p class="button__text">By clicking the "Sign Up" button, you confirm that you accept our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></p>
+               </div>
+               <p class="guestion">Have an account?<a href="#">Log in</a></p>
+           </form>
+        </div>
+    </div>
+</body>
+
+
+

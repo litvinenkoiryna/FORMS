@@ -1,0 +1,10 @@
+.button {
+  &__submit{
+    width: 500px;
+    height: 38px;
+    color:$red;
+    align-items: center;
+    border-color: $light-lightgreylightgrey;
+    border-radius: 4px;
+  }
+}
